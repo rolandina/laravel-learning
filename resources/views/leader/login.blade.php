@@ -1,16 +1,17 @@
 @extends('layout.login')
 
 @section('content')
-    <div class="header">
-        <h1>Login as a project leader</h1>
-    </div>
+  
+
 
     <div class="login-form">
+        <h1>Login as a project leader</h1>
         <form method="POST" action="/users">
             <p>email</p>
             <input name="email" class= "form-input" type ="text" placeholder='user@example.com' >
             <p>password</p>            
             <input name="password" class= "form-input" type ="text" > 
+            <p></p>
             <button type="submit">Log in</button> 
         </form> 
         <p>
