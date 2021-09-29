@@ -24,29 +24,30 @@ Route::get('/leader/login', function () {
 });
 
 
-Route::get('/register', function () {
-    return view('register');
+Route::get('leader/register', function () {
+    return view('leader.register');
 });
 
-Route::get('/leader/projects', function () {
-    return view('leader.projects');
+Route::get('/leader/projects-catalog', function () {
+    return view('leader.projects-catalog');
+});
+
+Route::get('/leader/your-projects', function () {
+    return view('leader.your-projects');
 });
 
 Route::get('/leader/profile', function () {
     return view('leader.profile');
 });
 
+Route::get('/leader/test', function () {
+    return view('leader.test');
+});
+
 Route::get('/leader/create-project', function () {
     return view('leader.create-project');
 });
 
-Route::get('/leader/test', function () {
-    return view('leader/test');
-});
-
-Route::get('/leader/project', function () {
-    return view('leader/project');
-});
 
 
 
